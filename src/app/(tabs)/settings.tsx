@@ -1,9 +1,10 @@
-import {Text, View} from "react-native";
+import {Button, Text, View} from "react-native";
+import {router} from "expo-router";
 
 export default function SettingsScreen() {
   return (
     <View>
-      <Text>Ajustes</Text>
+      <Button title="Ver boas-vindas" onPress={() => router.push("/onboarding")} />
     </View>
   );
 }

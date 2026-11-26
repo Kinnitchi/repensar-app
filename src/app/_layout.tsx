@@ -4,6 +4,7 @@ import {HelpButton} from "../components/HelpButton";
 export default function RootLayout() {
   return (
     <Stack screenOptions={{headerRight: () => <HelpButton />}}>
+      <Stack.Screen name="onboarding" options={{title: "Boas-vindas"}} />
       <Stack.Screen name="(tabs)" options={{headerShown: false}} />
       <Stack.Screen name="record/[id]" options={{title: "Registro"}} />
       <Stack.Screen name="distortion/[id]" options={{title: "Distorção"}} />
