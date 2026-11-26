@@ -1,8 +1,8 @@
 import {StatusBar} from "expo-status-bar";
 import {StyleSheet, Text, View} from "react-native";
-import {colors} from "./src/theme/colors";
+import {colors} from "../../theme/colors";
 
-export default function App() {
+export default function RecordsScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Repensar...</Text>
