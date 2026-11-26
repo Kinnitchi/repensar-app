@@ -2,12 +2,14 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import {Tabs} from "expo-router/js-tabs";
 import {HelpButton} from "../../components/HelpButton";
 import {colors} from "../../theme/colors";
+import {spacing} from "../../theme/spacing";
 
 export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
         headerRight: () => <HelpButton />,
+        headerRightContainerStyle: {paddingRight: spacing.md},
         headerStyle: {backgroundColor: colors.background},
         headerTintColor: colors.text,
         headerShadowVisible: false,
