@@ -1,6 +1,6 @@
+import Ionicons from "@expo/vector-icons/Ionicons";
 import {Tabs} from "expo-router/js-tabs";
 import {HelpButton} from "../../components/HelpButton";
-import Ionicons from "@expo/vector-icons/Ionicons";
 import {colors} from "../../theme/colors";
 
 export default function TabsLayout() {
@@ -22,6 +22,27 @@ export default function TabsLayout() {
         options={{
           title: "Registros",
           tabBarIcon: ({color, size}) => <Ionicons name="journal-outline" color={color} size={size} />,
+        }}
+      />
+      <Tabs.Screen
+        name="insights"
+        options={{
+          title: "Insights",
+          tabBarIcon: ({color, size}) => <Ionicons name="stats-chart-outline" color={color} size={size} />,
+        }}
+      />
+      <Tabs.Screen
+        name="learn"
+        options={{
+          title: "Aprender",
+          tabBarIcon: ({color, size}) => <Ionicons name="book-outline" color={color} size={size} />,
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Ajustes",
+          tabBarIcon: ({color, size}) => <Ionicons name="settings-outline" color={color} size={size} />,
         }}
       />
     </Tabs>
