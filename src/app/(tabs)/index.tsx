@@ -1,11 +1,14 @@
-import {Button, StyleSheet, Text, View} from "react-native";
-import {colors} from "../../theme/colors";
 import {router} from "expo-router";
+import {Button, StyleSheet, View} from "react-native";
 
 export default function RecordsScreen() {
   return (
     <View style={styles.container}>
       <Button title="Novo registro" onPress={() => router.push("/record/new")} />
+
+      {/* Temporário: some na parte C, quando os cartões de registro chegarem */}
+      <Button title="Abrir registro 1" onPress={() => router.push("/record/1")} />
+      <Button title="Abrir registro 2" onPress={() => router.push("/record/2")} />
     </View>
   );
 }
@@ -15,15 +18,5 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-  },
-  title: {
-    color: colors.primary,
-    fontSize: 32,
-    fontWeight: "bold",
-  },
-  subtitle: {
-    fontSize: 16,
-    color: colors.textMuted,
-    marginTop: 8,
   },
 });

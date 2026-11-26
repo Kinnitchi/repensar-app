@@ -13,7 +13,7 @@ export default function OnboardingScreen() {
       <Text>Seus registros ficam só neste aparelho.</Text>
 
       <View>
-        <Switch value={accepted} onValueChange={setAccepted} />
+        <Switch value={accepted} onValueChange={setAccepted} accessibilityLabel="Concordo em guardar meus registros de saúde neste aparelho" />
         <Text>Entendo que meus registros são dados de saúde e concordo em guardá-los neste aparelho.</Text>
       </View>
 
