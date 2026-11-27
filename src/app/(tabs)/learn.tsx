@@ -11,19 +11,12 @@ export default function LearnScreen() {
     <ScrollView contentContainerStyle={styles.content}>
       <View style={styles.header}>
         <Text style={styles.title}>Entender para repensar</Text>
-        <Text style={styles.subtitle}>
-          Conheça os passos do registro e os atalhos que a mente pega quando a emoção está forte.
-        </Text>
+        <Text style={styles.subtitle}>Conheça os passos do registro e os atalhos que a mente pega quando a emoção está forte.</Text>
       </View>
 
       <SectionCard title="Como funciona um registro" description="Sete passos, no seu tempo. Dá para parar e continuar depois.">
         {RECORD_STEPS.map((step, index) => (
-          <View
-            key={step.title}
-            style={styles.step}
-            accessible
-            accessibilityLabel={`Passo ${index + 1}: ${step.title}. ${step.description}`}
-          >
+          <View key={step.title} style={styles.step} accessible accessibilityLabel={`Passo ${index + 1}: ${step.title}. ${step.description}`}>
             <View style={styles.stepNumber}>
               <Text style={styles.stepNumberText}>{index + 1}</Text>
             </View>

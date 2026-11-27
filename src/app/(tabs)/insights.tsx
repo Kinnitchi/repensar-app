@@ -61,9 +61,7 @@ function InsightsContent({insights}: {insights: InsightsSummary}) {
         />
         <View style={styles.highlight}>
           <Text style={styles.highlightText}>
-            {relief > 0
-              ? `Em média, a emoção ficou ${relief} pontos mais leve.`
-              : "Nem sempre a emoção diminui, e tudo bem. Registrar já é um passo."}
+            {relief > 0 ? `Em média, a emoção ficou ${relief} pontos mais leve.` : "Nem sempre a emoção diminui, e tudo bem. Registrar já é um passo."}
           </Text>
         </View>
       </SectionCard>
@@ -124,8 +122,7 @@ function PrivacyNote() {
     <View style={styles.note}>
       <Ionicons name="lock-closed-outline" size={18} color={colors.textMuted} />
       <Text style={styles.noteText}>
-        Esses números mostram padrões, não diagnósticos. Se fizer sentido, leve para a conversa com quem acompanha você.
-        Seus registros ficam só neste aparelho.
+        Esses números mostram padrões, não diagnósticos. Se fizer sentido, leve para a conversa com quem acompanha você. Seus registros ficam só neste aparelho.
       </Text>
     </View>
   );

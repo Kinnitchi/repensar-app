@@ -13,41 +13,17 @@ export default function SettingsScreen() {
   return (
     <ScrollView contentContainerStyle={styles.content}>
       <SettingsGroup title="Privacidade e segurança">
-        <SettingsRow
-          icon="phone-portrait-outline"
-          label="Seus registros ficam neste aparelho"
-          description="Nada é enviado para a internet."
-        />
-        <SettingsRow
-          icon="finger-print-outline"
-          label="Bloquear com digital ou rosto"
-          description="Pede a biometria ao abrir o app."
-          soon
-        />
+        <SettingsRow icon="phone-portrait-outline" label="Seus registros ficam neste aparelho" description="Nada é enviado para a internet." />
+        <SettingsRow icon="finger-print-outline" label="Bloquear com digital ou rosto" description="Pede a biometria ao abrir o app." soon />
       </SettingsGroup>
 
       <SettingsGroup title="Seus dados">
-        <SettingsRow
-          icon="download-outline"
-          label="Exportar meus registros"
-          description="Gera um arquivo com tudo o que você escreveu."
-          soon
-        />
-        <SettingsRow
-          icon="trash-outline"
-          label="Apagar todos os dados"
-          description="Remove seus registros deste aparelho de vez."
-          soon
-        />
+        <SettingsRow icon="download-outline" label="Exportar meus registros" description="Gera um arquivo com tudo o que você escreveu." soon />
+        <SettingsRow icon="trash-outline" label="Apagar todos os dados" description="Remove seus registros deste aparelho de vez." soon />
       </SettingsGroup>
 
       <SettingsGroup title="Apoio">
-        <SettingsRow
-          icon="help-buoy-outline"
-          label="Ajuda e contatos de crise"
-          description="CVV 188 e SAMU 192."
-          onPress={() => router.push("/help")}
-        />
+        <SettingsRow icon="help-buoy-outline" label="Ajuda e contatos de crise" description="CVV 188 e SAMU 192." onPress={() => router.push("/help")} />
         <SettingsRow
           icon="leaf-outline"
           label="Ver boas-vindas"

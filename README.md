@@ -232,12 +232,12 @@ A cada push e pull request, o GitHub Actions roda formatação, lint, typecheck 
 
 | Etapa | Entrega                                         | Status |
 | ----- | ----------------------------------------------- | :----: |
-| 1     | Setup, banco criptografado, migrations e seeds  |   ✅    |
-| 2     | Wizard de 7 passos com rascunho e validação     |   ⏳    |
-| 3     | Edição e duplicação de registros                |   ⏳    |
-| 4     | Gráficos: evolução semanal e mapa de calor      |   ⏳    |
-| 5     | Onboarding, biometria/PIN, PDF, lembrete diário |   ⏳    |
-| 6     | Acessibilidade, modo escuro, APK em Releases    |   ⏳    |
+| 1     | Setup, banco criptografado, migrations e seeds  |   ✅   |
+| 2     | Wizard de 7 passos com rascunho e validação     |   ⏳   |
+| 3     | Edição e duplicação de registros                |   ⏳   |
+| 4     | Gráficos: evolução semanal e mapa de calor      |   ⏳   |
+| 5     | Onboarding, biometria/PIN, PDF, lembrete diário |   ⏳   |
+| 6     | Acessibilidade, modo escuro, APK em Releases    |   ⏳   |
 
 **Depois do MVP**
 
