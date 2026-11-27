@@ -1,0 +1,13 @@
+# Finais de linha: todo arquivo de texto fica com LF no repositório e no disco, inclusive no Windows.
+# Evita o aviso "LF will be replaced by CRLF" e diffs que só mudam o fim da linha.
+* text=auto eol=lf
+
+# Binários: o Git nunca converte nada neles.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.ttf binary
+*.otf binary
+*.db binary
