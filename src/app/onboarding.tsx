@@ -65,7 +65,7 @@ export default function OnboardingScreen() {
           importantForAccessibility="no-hide-descendants"
           value={accepted}
           onValueChange={setAccepted}
-          trackColor={{false: colors.border, true: colors.primary}}
+          trackColor={{false: colors.outline, true: colors.primary}}
           thumbColor={accepted ? colors.primaryDark : colors.onPrimary}
         />
       </Pressable>

@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.sm + spacing.xs,
     borderRadius: radius.full,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: colors.outline,
     backgroundColor: colors.surface,
   },
   selected: {
