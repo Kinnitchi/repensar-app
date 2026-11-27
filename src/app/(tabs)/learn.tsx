@@ -1,5 +1,5 @@
 import {ScrollView, StyleSheet, Text, View} from "react-native";
-import {SectionCard} from "../../components/SectionCard";
+import {CollapsibleCard} from "../../components/CollapsibleCard";
 import {DistortionCard} from "../../features/distortions/DistortionCard";
 import {DISTORTIONS} from "../../features/distortions/distortions";
 import {RECORD_STEPS} from "../../features/records/recordSteps";
@@ -14,7 +14,7 @@ export default function LearnScreen() {
         <Text style={styles.subtitle}>Conheça os passos do registro e os atalhos que a mente pega quando a emoção está forte.</Text>
       </View>
 
-      <SectionCard title="Como funciona um registro" description="Sete passos, no seu tempo. Dá para parar e continuar depois.">
+      <CollapsibleCard title="Como funciona um registro" description="Sete passos, no seu tempo. Dá para parar e continuar depois.">
         {RECORD_STEPS.map((step, index) => (
           <View key={step.title} style={styles.step} accessible accessibilityLabel={`Passo ${index + 1}: ${step.title}. ${step.description}`}>
             <View style={styles.stepNumber}>
@@ -26,7 +26,7 @@ export default function LearnScreen() {
             </View>
           </View>
         ))}
-      </SectionCard>
+      </CollapsibleCard>
 
       <View style={styles.sectionHeader}>
         <Text style={styles.sectionTitle} accessibilityRole="header">
