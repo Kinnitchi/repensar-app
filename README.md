@@ -207,14 +207,20 @@ npx eas-cli@latest build --profile development --platform android
 
 ### Scripts
 
-| Comando                 | O que faz                            |
-| ----------------------- | ------------------------------------ |
-| `npm start`             | Inicia o servidor de desenvolvimento |
-| `npm test`              | Roda os testes                       |
-| `npm run test:coverage` | Testes com relatório de cobertura    |
-| `npm run lint`          | ESLint                               |
-| `npm run typecheck`     | Checagem de tipos do TypeScript      |
-| `npm run format`        | Formata o código com Prettier        |
+<!-- AUTO-GENERATED: gerado a partir dos "scripts" do package.json. Atualize lá e rode /update-docs. -->
+
+| Comando                | O que faz                                        |
+| ---------------------- | ------------------------------------------------ |
+| `npm start`            | Inicia o servidor de desenvolvimento (Expo)      |
+| `npm run android`      | Inicia e abre no Android (emulador ou aparelho)  |
+| `npm run ios`          | Inicia e abre no simulador iOS (só no macOS)     |
+| `npm run web`          | Inicia a versão web no navegador                 |
+| `npm run lint`         | Procura erros com o ESLint (`expo lint`)         |
+| `npm run format`       | Formata o código com o Prettier                  |
+| `npm run format:check` | Confere a formatação sem alterar nenhum arquivo  |
+| `npm run typecheck`    | Checagem de tipos do TypeScript (`tsc --noEmit`) |
+
+<!-- /AUTO-GENERATED -->
 
 ## ✅ Testes e qualidade
 
