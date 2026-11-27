@@ -3,7 +3,7 @@
 
 import type {RecordDraft} from "./recordDraft";
 
-export type RecordDetail = RecordDraft & {
+type RecordDetail = RecordDraft & {
   id: string;
   occurredAt: string;
   status: "draft" | "completed";

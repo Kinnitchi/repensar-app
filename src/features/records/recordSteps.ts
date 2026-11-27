@@ -1,7 +1,7 @@
 // Os 7 passos do Registro de Pensamentos (RPD).
 // A tela Aprender usa agora. O assistente de novo registro vai usar a mesma lista quando for estilizado.
 
-export type RecordStep = {
+type RecordStep = {
   title: string;
   description: string;
 };

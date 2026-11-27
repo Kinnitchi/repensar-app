@@ -1,7 +1,7 @@
 // Emoções mais comuns no registro. Por enquanto a pessoa escolhe a principal.
 // Os id em inglês são os mesmos usados na tela de Insights.
 
-export type Emotion = {
+type Emotion = {
   id: string;
   name: string;
 };
