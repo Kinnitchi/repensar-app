@@ -10,11 +10,18 @@ type PrimaryButtonProps = {
   title: string;
   onPress: () => void;
   icon?: IconName;
+  disabled?: boolean;
 };
 
-export function PrimaryButton({title, onPress, icon}: PrimaryButtonProps) {
+export function PrimaryButton({title, onPress, icon, disabled = false}: PrimaryButtonProps) {
   return (
-    <Pressable accessibilityRole="button" onPress={onPress} style={({pressed}) => [styles.button, pressed && styles.pressed]}>
+    <Pressable
+      accessibilityRole="button"
+      accessibilityState={{disabled}}
+      disabled={disabled}
+      onPress={onPress}
+      style={({pressed}) => [styles.button, pressed && styles.pressed, disabled && styles.disabled]}
+    >
       {icon && <Ionicons name={icon} size={20} color={colors.onPrimary} />}
       <Text style={styles.title}>{title}</Text>
     </Pressable>
@@ -35,6 +42,10 @@ const styles = StyleSheet.create({
   pressed: {
     opacity: 0.85,
     transform: [{scale: 0.98}],
+  },
+  // Apagado, mas ainda legível: a pessoa entende que o botão existe e o que falta para liberar.
+  disabled: {
+    opacity: 0.45,
   },
   title: {
     color: colors.onPrimary,
